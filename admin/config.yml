@@ -1,0 +1,17 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "img"
+public_folder: "/img"
+
+collections:
+  - name: "contenido"
+    label: "Contenido de la Tienda"
+    files:
+      - file: "index.html"
+        label: "Página Principal"
+        name: "index"
+        fields:
+          - {label: "Título Principal", name: "titulo", widget: "string"}
+          - {label: "Descripción", name: "descripcion", widget: "text"}
